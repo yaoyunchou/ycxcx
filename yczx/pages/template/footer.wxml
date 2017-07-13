@@ -1,0 +1,14 @@
+<view class="nsw-footer">
+  <navigator class="nav" url="/pages/index/index"  open-type="redirect" hover-class="on">
+      <text class ="iconfont icon-xuelekecheng"></text>
+      <text >今日功课</text>
+  </navigator>
+  <navigator class="nav" url="/pages/calendar/calendar"  open-type="redirect" hover-class="on">
+      <text class ="iconfont icon-xuexi"></text>
+      <text > 哲学框架</text>
+  </navigator>
+  <navigator class="nav" url="/pages/calendar/calendar" open-type="redirect" hover-class="on">
+     <text class ="iconfont icon-rili"></text>
+     <text >日历</text>
+  </navigator>
+</view>

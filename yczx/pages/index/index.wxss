@@ -1,0 +1,49 @@
+/**index.wxss**/
+@import "../common/lib/weui.wxss";
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+
+.list-box{
+  display: flex;
+  width:100%;
+  border-top:1px solid #ccc;
+ 
+  margin-top:50rpx;
+}
+.list-box .in{
+  flex: 1;
+  border-right:1px solid #ccc;
+   border-bottom:1px solid #ccc;
+  padding:30rpx 0;
+}
+.list-box .in text{
+  display: block;
+  text-align: center;
+  line-height: 80rpx;
+
+}
+.list-box .in text.xinchen{
+  font-size:60rpx;
+  color:green;
+}
+.list-box .in:last-child{
+  border-right:none;
+}

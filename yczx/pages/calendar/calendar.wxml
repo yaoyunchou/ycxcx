@@ -1,0 +1,45 @@
+
+<!--<icon class= "time-btn" type="waiting_circle" size="45"/>-->
+<view class="container calendar">
+  <view class="calendar-header">
+    <image class="calendar-left" bindtap="preMonth" src="http://wxxcx.nsw99.com/images/calendar-arrow-left.png" mode="aspectFit"></image>
+    <text>{{today}}</text>
+    <image class="calendar-right" bindtap="nextMonth" src="http://wxxcx.nsw99.com/images/calendar-arrow-right.png" mode="aspectFit"></image>
+  </view>
+  <view class="row">
+    <view class="th" wx:for="{{weekly}}" wx:key="ids">{{item}}</view>
+  </view>
+  <view class="row" wx:for="{{days}}" wx:key="ids" wx:for-item="dataWeekly">
+    <view wx:for="{{dataWeekly}}" wx:key="ids" class="td">
+      <text bindtap="selectDay" data-date="{{item.num}}" class="{{item.isSelect ? 'isSelect' : ''}} {{item.isToday ? 'today' : ''}} {{index===0||index===6?'rad':''}}">{{item.num||''}}</text>
+    </view>
+  </view>
+</view>
+<view class="idea">
+  <view>
+  <view class="h3">
+        <text>• 初心</text>
+    </view>
+    <text>成就客户，成就伙伴。</text>
+  </view>
+  
+  <view>
+    <view class="h3">
+        <text>• 使命</text>
+    </view>
+    <text>助力中校企业成长，为祖国强盛而奋斗。</text>
+  </view>
+  <view>
+    <view class="h3">
+        <text>• 愿景</text>
+    </view>
+    <text>成为中国最有价值的网络营销服务平台</text>
+  </view>
+  <view>
+     <view class="h3">
+        <text>• 价值观</text>
+    </view>
+    <text>至善至诚，共创共享，互赢互利</text>
+  </view>
+</view>
+<!--<include src="../template/footer.wxml"/>-->

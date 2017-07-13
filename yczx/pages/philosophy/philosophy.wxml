@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="obligate">
+    {{pageTitle}}
+  </view>
+  <view class="article" wx:for="{{articles}}" wx:key="ids"  wx:for-item="article" >
+  <image style="width:528rpx;height: 172rpx;display:block; margin:0 auto; padding:50rpx 0; " wx:if="{{article.image}}" src="{{article.image}}"></image>
+    <view class="head">
+      <view class="text" wx:for="{{article.title}}" wx:key="ids">{{item}}</view>
+      <view class="line"></view>
+    </view>
+    <view class="content">
+      <view wx:for="{{article.contents}}" wx:key="ids">{{item}}</view>
+    </view>
+  </view>
+
+</view>

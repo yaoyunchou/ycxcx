@@ -1,0 +1,84 @@
+.calendar{
+     width:100%;
+     height: 100%;
+     padding: 40rpx;
+     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+     font-size:36rpx;
+     box-sizing: border-box;
+}
+.obligate{
+    
+}
+.calendar .row{
+   height: 84rpx;
+   line-height: 84rpx;
+   display: flex;
+}
+.calendar .row .td,.calendar .row .th{
+    flex: 1;
+    text-align: center;
+}
+.calendar .row .td .rad{
+    color:red;
+}
+.calendar .row .td text{
+    display: inline-block;
+    border: 2rpx solid #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    width:  80rpx;
+    height: 80rpx;
+    cursor: pointer;
+}
+.calendar .row .td text:active,.calendar .row .td .isSelect{
+    border-color:#f08300;
+    color:#f08300;
+}
+.calendar .row .td .today{
+    border-color:#f08300;
+    background-color:#f08300;
+    color:#ffffff;
+}
+.calendar .row .th{
+    height: 80rpx;
+    background-color: #fce6cc
+}
+.calendar .calendar-header{
+    height: 60rpx;
+    font-size: 52rpx;
+    margin-bottom: 70rpx;
+    line-height: 50rpx;
+    text-align: center;
+}
+.calendar-left{
+    display: block;
+    width:50rpx;
+    height: 50rpx;
+    float:left;
+    margin-left:16%;
+}
+.calendar-right{
+    display: block;
+    width:50rpx;
+    height: 50rpx;
+    float:right;
+    margin-right: 16%;
+}
+/*理念*/
+.idea{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    padding:40rpx;
+    line-height: 72rpx;
+       padding-bottom:80px;
+}
+.idea >view{
+    margin-bottom: 20rpx;
+}
+.idea .h3{color:#f08300;font-weight: bold; height: 72rpx; border-bottom:1px solid #dfdfdf;}
+.idea .h3 text{
+    padding-right: 20px;
+    line-height: 72rpx;
+    display: block;
+    float: left;
+    border-bottom: 1px solid #f08300;
+}
