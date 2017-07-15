@@ -21,12 +21,14 @@
   margin-top: 20px;
 }
 
+.list-box.frist{
+  margin-top:50rpx;
+  border-top:1px solid #ccc;
+}
 .list-box{
   display: flex;
   width:100%;
-  border-top:1px solid #ccc;
- 
-  margin-top:50rpx;
+
 }
 .list-box .in{
   flex: 1;
