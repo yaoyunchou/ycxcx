@@ -1,0 +1,8 @@
+/* basic.wxss */
+.answer{
+  font-size: 35rpx;
+  font-family: "微软雅黑";
+  padding:0 10rpx;
+  line-height: 70rpx;
+
+}

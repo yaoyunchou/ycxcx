@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="jdwx">
+  <view class="title">
+    宜都市向明机电维修
+  </view>
+  <view class="short-title">
+    电机维修
+  </view>
+  <view class="info">
+    <block wx:for-items="{{pages}}" wx:for-item="page" wx:key="*item">
+      <navigator wx:if="{{page.url}}" url="/pages/{{page.url}}" class="navigator">
+        <view class="navigator-icon xinchen {{page.icon}}"></view>
+        <view class="navigator-text">{{page.zh}}</view>
+        <view class="navigator-arrow"></view>
+      </navigator>
+      <view wx:if="{{!page.url}}" class="navigator" >
+        <block wx:if="{{page.phone}}" bindtap="makePhoneCall">
+          <view class="navigator-icon xinchen {{page.icon}}" bindtap="makePhoneCall"></view>
+          <view class="navigator-text" bindtap="makePhoneCall">{{page.zh}}</view>
+          <view class="navigator-arrow" bindtap="makePhoneCall"></view>
+        </block>
+        <block wx:if="{{!page.phone}}">
+          <view class="navigator-icon xinchen {{page.icon}}"></view>
+          <view class="navigator-text">{{page.zh}}</view>
+        </block>
+
+      </view>
+    </block>
+
+  </view>
+</view>
+<view class="image-box">
+  <image src="/image/zy-x.png"></image>
+  <image src="/image/pic01.jpg" class="pic01" ></image>
+</view>

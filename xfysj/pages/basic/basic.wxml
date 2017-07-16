@@ -1,0 +1,13 @@
+<!--basic.wxml-->
+
+<view class="classname">
+<text>{{title}}</text>
+<scroll-view>
+  {{desc}}
+</scroll-view>
+
+<button style="margin-top:100px;" bindtap="goIndex" type="primary" size="default" plain="false">返回</button>
+
+
+
+</view>

@@ -1,0 +1,26 @@
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">概念填脑</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">代码解读</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">复习计划</view>  
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+    <!-- 我是哈哈 -->  
+    <swiper-item>  
+      <view>
+      <scroll-view class="scroll" scroll-top="{{scrollTop}}" style="height:580px;" scroll-y="true" bindscroll="scrll"  bindscrolltolower="loadMore">
+      <view class="block" wx:for="{{listLi}}" wx:for-item="item" wx:key="{{item.id}}">
+      <navigator url="../basic/basic?id={{item.id}}">{{item.title}}</navigator>
+      </view>  
+      </scroll-view>
+    </view> 
+    </swiper-item>  
+    <!-- 我是呵呵 -->  
+    <swiper-item>  
+      <view>正在更新</view>  
+    </swiper-item>  
+    <!-- 我是嘿嘿 -->  
+    <swiper-item>  
+      <view>正在完善</view>  
+    </swiper-item>  
+</swiper>  

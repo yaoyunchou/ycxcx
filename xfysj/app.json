@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/web/web",
+    "pages/software/software",
+    "pages/show/show",
+    "pages/contact/contact",
+    "pages/basic/basic"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2694d2",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "backgroundColor":"#2694d2",
+    "color":"#fff",
+    "borderStyle":"#2694d2",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/web/web",
+        "text": "前端",
+        "iconPath": "images/web.png",
+        "selectedIconPath": "images/web.png"
+      },
+      {
+        "pagePath": "pages/software/software",
+        "text": "软件",
+        "iconPath": "images/software.png",
+        "selectedIconPath": "images/software.png"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "作品",
+        "iconPath": "images/show.png",
+        "selectedIconPath": "images/show.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "images/contact.png",
+        "selectedIconPath": "images/contact.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+<!--basic.wxml-->
+
+<view class="answer">
+<text>{{title}}</text>
+<view>
+  {{desc}}
+</view>
+
+<button style="margin-top:100px;" bindtap="goIndex" type="primary" size="default" plain="false">返回</button>
+
+
+
+</view>

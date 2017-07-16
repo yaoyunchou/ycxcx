@@ -1,0 +1,28 @@
+/* web.wxss */
+
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center;  
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 33.33%;  
+    color: #777777;  
+}  
+.on{ color: #da7c0c;  
+    border-bottom: 5rpx solid #da7c0c;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden;  font-family: "微软雅黑"; padding:10rpx; box-sizing: border-box;}  
+.swiper-box view{  
+    text-align: left;
+} 
+
+.block {
+  border: 1px solid #71b471;
+  margin: 20rpx 20rpx;
+  padding: 10rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  
+}

@@ -1,0 +1,12 @@
+<view class="home">
+  <view class="home-head">
+    小飞鱼设计工作室是一个专注前端的团队，我们专注于设计，前端代码等等。
+  </view>
+  <view class="phone">
+    电话：18124101815
+  </view>
+  <view class="taobao">
+    淘宝店铺：https://shop71553004.taobao.com
+
+  </view>
+</view>
