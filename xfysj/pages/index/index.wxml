@@ -6,6 +6,9 @@
       </swiper-item>
     </block>
   </swiper>
+  <view class="tools">
+      
+  </view>
   <view class="index-list">
     <view class="list-in">
       <view class="list-in-left">
