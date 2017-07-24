@@ -1,55 +1,48 @@
-//获取应用实例  
-var app = getApp()
+var modal = require('../../common/modal');
+
+
 Page({
   data: {
-    /** 
-        * 页面配置 
-        */
-    winWidth: 0,
-    winHeight: 0,
-    // tab切换  
-    currentTab: 0,
-    listLi: getApp().listLi
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 5000,
+    duration: 1000
   },
-  onLoad: function () {
-    var that = this;
-
-    /** 
-     * 获取系统信息 
-     */
-    wx.getSystemInfo({
-
+  onShareAppMessage: function (res) {
+    return {
+      title: '小飞鱼设计',
+      path: '/pages/index/index',
       success: function (res) {
-        that.setData({
-          winWidth: res.windowWidth,
-          winHeight: res.windowHeight
-        });
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
       }
-
-    });
-  },
-  /** 
-     * 滑动切换tab 
-     */
-  bindChange: function (e) {
-
-    var that = this;
-    that.setData({ currentTab: e.detail.current });
-
-  },
-  /** 
-   * 点击tab切换 
-   */
-  swichNav: function (e) {
-
-    var that = this;
-
-    if (this.data.currentTab === e.target.dataset.current) {
-      return false;
-    } else {
-      that.setData({
-        currentTab: e.target.dataset.current
-      })
     }
+  },
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
+  },
+  changeAutoplay: function (e) {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+  intervalChange: function (e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: function (e) {
+    this.setData({
+      duration: e.detail.value
+    })
   }
-})  
+})

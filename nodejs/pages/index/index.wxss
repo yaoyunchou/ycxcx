@@ -1,37 +1,45 @@
 
-.swiper-tab{  
-    width: 100%;  
-    border-bottom: 2rpx solid #777777;  
-    text-align: center;  
-    line-height: 80rpx;}  
-.swiper-tab-list{  font-size: 30rpx;  
-    display: inline-block;  
-    width: 33.33%;  
-    color: #777777;  
-}  
-.on{ color: #da7c0c;  
-    border-bottom: 5rpx solid #da7c0c;}  
-  
-.swiper-box{ display: block; width: 100%; overflow: hidden; padding:10px; box-sizing: border-box; }  
-.swiper-box view{  
-    text-align: left;  
-} 
-
-.block {
-  border: 1px solid #71b471;
-  margin: 20rpx 20rpx;
-  padding: 10rpx;
-  background-color: #fff;
-  border-radius: 20rpx;
+.index{
+  line-height: 70rpx;
+  background: #eae8e8;
+  min-height: 100vh;
+}
+.index-swiper image{
+  width:100%;
  
 }
-.home{
-  line-height: 70rpx;
-  padding: 10rpx;
+
+.index-list .list-in{
   box-sizing: border-box;
-  font-family: "微软雅黑"
+  height: 240rpx;
+  margin-bottom: 20rpx;
+  padding:20rpx 25rpx;
+  font-family: "微软雅黑";
+  background: #fff;
 }
-.home h3{
-  font-weight: bold;
-  font-size: 40rpx;
+
+.index-list .list-in .list-in-left{
+  width:200rpx;
+  height: 200rpx;
+  float: left;
+}
+.index-list .list-in .list-in-left image{
+  width:100%;
+}
+
+.index-list .list-in .list-in-right{
+  width:475rpx;
+  padding-left:25rpx;
+  float: left;
+}
+.index-list .list-in .list-in-right .title{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  margin-bottom: 10rpx;
+}
+
+.index-list .list-in .list-in-right .detail{
+  font-size: 22rpx;
+  color:#6A6A6A;
+  line-height: 32rpx;
 }
