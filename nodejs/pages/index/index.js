@@ -1,5 +1,5 @@
 var modal = require('../../common/modal');
-
+var getInfomation = require('../../services/infomation.service').getInfomation;
 
 Page({
   data: {
@@ -8,6 +8,7 @@ Page({
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
+    datalist:[],
     indicatorDots: false,
     autoplay: false,
     interval: 5000,
@@ -44,5 +45,13 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+  onShow: function (options) {
+    getInfomation().then((res)=>{
+      console.log(res);
+      this.setData({
+        dataList: res
+      })
+    });
   }
 })

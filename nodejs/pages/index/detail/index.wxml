@@ -1,0 +1,44 @@
+
+<!--index.wxml-->
+<view class="container" wx:for="{{pageInfo.article}}" wx:for-item="article" wx:for-index="articleIndex" wx:key="ids" wx:if="{{articleIndex == currentPage}}">
+  <view class="obligate">
+    {{article.pageTitle}}
+  </view>
+  <view class="header">
+    <view class="header-in">
+      <view class="left">
+        <image src="http://wxxcx.nsw99.com/images/logo.png" mode="aspectFill"></image>
+        <view class="left">
+          <text class="title">{{article.title}}</text>
+          <text class="info" >上次阅读日期 {{lastDate}} </text>
+        </view>
+      </view>
+      <view class="right">
+        <image src="{{musicStop}}" wx:if="{{!isPlay}}" bindtouchstart="audioPlay"></image>
+        <image class="music" src="{{musicStart}}" wx:if="{{isPlay}}" bindtouchstart="audioPause"></image>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="article">
+      <view wx:for="{{article.contents}}" wx:key="ids">{{item}}</view>
+    </view>
+    <view class="ul">
+      <view class="li list" wx:for="{{article.klass}}" wx:for-item="klass" wx:for-index="klassIndex" wx:key="ids">
+        <text class="title">{{klass.title}}</text>
+        <view class="info">
+          <view wx:for="{{klass.contents}}" wx:key="ids" wx:for-item="content">{{content}} </view>
+          <view wx:if="{{klassIndex === 1}}" class="right">
+            <image src="{{pageInfo.dayImage}}" mode="aspectFill"></image>
+          </view>
+        </view>
+        <view class="clearfix"></view>
+      </view>
+      <view class="obligate">
+        -- 谨记今天，信守承诺 --
+      </view>
+      <button class="btn" wx:if="{{pageInfo.article.length>1}}" type="primary" size="default" bindtap="otherPage">{{currentPage ===0?"下一篇："+pageInfo.article[1].title:"上一篇:"+pageInfo.article[0].title}} </button>
+    </view>
+  </view>
+</view>
+
