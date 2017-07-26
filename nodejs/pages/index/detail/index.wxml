@@ -1,23 +1,8 @@
 
 <!--index.wxml-->
-<view class="container" wx:for="{{pageInfo.article}}" wx:for-item="article" wx:for-index="articleIndex" wx:key="ids" wx:if="{{articleIndex == currentPage}}">
+<view class="container">
   <view class="obligate">
-    {{article.pageTitle}}
-  </view>
-  <view class="header">
-    <view class="header-in">
-      <view class="left">
-        <image src="http://wxxcx.nsw99.com/images/logo.png" mode="aspectFill"></image>
-        <view class="left">
-          <text class="title">{{article.title}}</text>
-          <text class="info" >上次阅读日期 {{lastDate}} </text>
-        </view>
-      </view>
-      <view class="right">
-        <image src="{{musicStop}}" wx:if="{{!isPlay}}" bindtouchstart="audioPlay"></image>
-        <image class="music" src="{{musicStart}}" wx:if="{{isPlay}}" bindtouchstart="audioPause"></image>
-      </view>
-    </view>
+    {{currentItem.title}}
   </view>
   <view class="content">
     <view class="article">
@@ -34,6 +19,7 @@
         </view>
         <view class="clearfix"></view>
       </view>
+      <button wx:if="{{canIUse}}" open-type="contact"> 客服消息 </button>
       <view class="obligate">
         -- 谨记今天，信守承诺 --
       </view>

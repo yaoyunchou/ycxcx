@@ -39,7 +39,8 @@
 }
 
 .index-list .list-in .list-in-right .detail{
-  font-size: 22rpx;
+  word-break: break-all;
+  font-size: 24rpx;
   color:#6A6A6A;
-  line-height: 32rpx;
+  line-height: 45rpx;
 }

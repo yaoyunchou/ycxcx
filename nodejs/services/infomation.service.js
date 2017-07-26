@@ -7,9 +7,14 @@ const consts = require('../common/const');
 function getInfomation() {
   return http.get('infomation/list',{});
 }
+function getDetail(id) {
+  return http.get('infomation/detail/'+id);
+}
+
 
 
 
 module.exports = {
-  getInfomation
+  getInfomation,
+  getDetail
 };

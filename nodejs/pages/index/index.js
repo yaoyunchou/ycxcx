@@ -1,5 +1,5 @@
 var modal = require('../../common/modal');
-var getInfomation = require('../../services/infomation.service').getInfomation;
+var getList = require('../../services/infomation.service').getInfomation;
 
 Page({
   data: {
@@ -16,7 +16,7 @@ Page({
   },
   onShareAppMessage: function (res) {
     return {
-      title: '小飞鱼设计',
+      title: 'nodejs',
       path: '/pages/index/index',
       success: function (res) {
         // 转发成功
@@ -47,11 +47,23 @@ Page({
     })
   },
   onShow: function (options) {
-    getInfomation().then((res)=>{
+    getList().then((res)=>{
       console.log(res);
       this.setData({
         dataList: res
       })
     });
+  },
+  goDetail:function(e){
+    let id = e.currentTarget.dataset.itemId;
+    wx.navigateTo({
+      url: 'detail/index?id='+id,
+      success: function () {
+        console.log("success!!")
+      },
+      fail: function () {
+        console.log("调用失败了....");
+      }
+    })
   }
 })
