@@ -15,8 +15,8 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: currentItem.title,
-      path: 'pages/index/detail/index?id=' + currentItem._id
+      title: this.data.currentItem.title,
+      path: 'pages/index/detail/index?id=' + this.data.currentItem._id
     }
   },
   onLoad: function (option) {

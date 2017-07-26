@@ -124,17 +124,12 @@
 -o-animation:musicRun 5s linear; /* Opera */
 animation-iteration-count:infinite;
 }
-@keyframes musicRun
-{
-   0%   {transform:rotate(0deg);}
-   50%  {transform:rotate(180deg);}
-   100% {transform:rotate(360deg);}
+.richtext{
+  margin:0;
+width:100%;
+line-height:50rpx;
+font-size:30rpx;
 }
-#myAudio{
-  display: none;
-}
-.btn{
-  text-overflow:ellipsis;
-white-space:nowrap;
-
+.richtext p{
+  text-indent: 2em;
 }

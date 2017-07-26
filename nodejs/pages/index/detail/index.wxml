@@ -5,6 +5,7 @@
     {{currentItem.title}}
   </view>
   <view class="content">
+   <rich-text class="richtext" nodes="{{currentItem.description}}"></rich-text>
     <view class="article">
       <view wx:for="{{article.contents}}" wx:key="ids">{{item}}</view>
     </view>
@@ -18,10 +19,6 @@
           </view>
         </view>
         <view class="clearfix"></view>
-      </view>
-      <button wx:if="{{canIUse}}" open-type="contact"> 客服消息 </button>
-      <view class="obligate">
-        -- 谨记今天，信守承诺 --
       </view>
       <button class="btn" wx:if="{{pageInfo.article.length>1}}" type="primary" size="default" bindtap="otherPage">{{currentPage ===0?"下一篇："+pageInfo.article[1].title:"上一篇:"+pageInfo.article[0].title}} </button>
     </view>
