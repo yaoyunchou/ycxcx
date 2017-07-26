@@ -1,0 +1,22 @@
+<view class="home">
+  <view class="home-head">
+    小飞鱼设计工作室是一个专注前端的团队，我们专注于设计，前端代码等等。
+  </view>
+  <view class="phone" bindtap="makePhoneCall">
+    电话：18124101815
+  </view>
+  <view class="taobao">
+    淘宝店铺：https://shop71553004.taobao.com
+   
+  </view>
+  <view class="brn-grounp">
+  <button type="primary"  bindtap="copyShop">复制淘宝店铺链接</button>
+  
+  <button open-type="contact" type="primary">进入客服会话</button>
+ 
+  </view>
+  <view class="qr-code">
+    <image src="../../images/original.jpg" mode="widthFix"></image>
+    <image src="../../images/ordinary.jpg"  mode="widthFix"></image>
+  </view>
+</view>

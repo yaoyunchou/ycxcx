@@ -1,0 +1,8 @@
+@import "../common/lib/weui.wxss";
+.home{
+  line-height: 70rpx;
+}
+
+.brn-grounp button{
+   margin: 30rpx 20rpx;
+}

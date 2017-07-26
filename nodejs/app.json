@@ -2,8 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/web/web",
-    "pages/basic/basic",
-    "pages/index/detail/index"
+    "pages/contact/contact",
+    "pages/nodejs/nodejs",
+    "pages/index/detail/index",
+    "pages/get-system-info/get-system-info"
+    
   ],
  "window": {
   "backgroundTextStyle": "light",
@@ -14,6 +17,7 @@
 "tabBar": {
   "backgroundColor": "#2694d2",
   "color": "#fff",
+  "selectedColor":"#fff",
   "borderStyle": "#2694d2",
     "list": [
       {
@@ -23,23 +27,18 @@
         "selectedIconPath": "images/index.png"
       },
       {
-        "pagePath": "pages/web/web",
+        "pagePath": "pages/nodejs/nodejs",
         "text": "前端",
         "iconPath": "images/web.png",
         "selectedIconPath": "images/web.png"
       },
       {
-        "pagePath": "pages/software/software",
+        "pagePath": "pages/get-system-info/get-system-info",
         "text": "软件",
         "iconPath": "images/software.png",
         "selectedIconPath": "images/software.png"
       },
-      {
-        "pagePath": "pages/show/show",
-        "text": "作品",
-        "iconPath": "images/show.png",
-        "selectedIconPath": "images/show.png"
-      },
+     
       {
         "pagePath": "pages/contact/contact",
         "text": "联系我们",
@@ -49,3 +48,4 @@
     ]
   }
 }
+

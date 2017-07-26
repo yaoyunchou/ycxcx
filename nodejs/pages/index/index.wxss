@@ -26,12 +26,17 @@
 .index-list .list-in .list-in-left image{
   width:100%;
 }
-
 .index-list .list-in .list-in-right{
-  width:475rpx;
+  width:100%;
   padding-left:25rpx;
   float: left;
 }
+
+/* .index-list .list-in .list-in-right{
+  width:475rpx;
+  padding-left:25rpx;
+  float: left;
+} */
 .index-list .list-in .list-in-right .title{
   font-size: 28rpx;
   line-height: 50rpx;

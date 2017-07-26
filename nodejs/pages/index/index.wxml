@@ -11,9 +11,9 @@
   </view>
   <view class="index-list">
     <view class="list-in" wx:for="{{dataList}}" wx:for-item="item" wx:key="*this" bindtap="goDetail"  data-item-id="{{item._id}}">
-      <view class="list-in-left">
+      <!-- <view class="list-in-left">
         <image src="/images/pic01.png" mode="widthFix"></image>
-      </view>
+      </view> -->
       <view class="list-in-right">
         <view class="title">{{item.title}}</view>
         <view class="detail">
