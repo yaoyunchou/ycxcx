@@ -1,142 +1,11 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-  
-}
-.container .obligate{
-  box-sizing: border-box;
-  width:100%;
-  height: 72rpx;
-  line-height: 72rpx;
-  text-align: center;
-  background-color:#f1efef;
-  margin-bottom:28rpx;
-  position: relative;
-}
-.calendar-btn image{
-  -webkit-transition:all .5s ease-in;
-	-moz-transition:all .5s ease-in;
-	transition:all .5s ease-in;
-  width:91rpx;
-  height: 85rpx;
-}
-.calendar-btn image:active,.calendar-btn image:focus,.calendar-btn image:hover{
-  width:182rpx;
-  height: 170rpx;
-}
-.container .header{
-  box-sizing: border-box;
-  min-height: 84rpx;
-  border-bottom:1px solid #faf9f9;
-  margin-bottom: 16rpx;
-  overflow: hidden;
-  clear:both;
-}
-.header .header-in{
-  min-height: 64rpx;
-  overflow: hidden;
-}
-.header .header-in .left{
-  float: left;
-  width:85%;
-}
-.header .header-in .left image{
-  display: block;
-  width:60rpx;
-  height: 60rpx;
-  border-radius: 4rpx;
-  border: 1px solid #e8e8e8;
-  float: left;
-  margin-right: 16rpx;
-}
-.header .header-in .left .title{
-  font-size:36rpx;
-  color:#EF8200;
-  display: block;
-}
-.header .header-in .left .info{
-  font-size:30rpx;
-  color:#C3C3C3;
-
-}
-.header .header-in .right{
-  float: right;
-}
-.header .header-in .right image{
-  display: block;
-  width:64rpx;
-  height: 64rpx;
-}
-.container .article{
-  font-size:38rpx;
-  display: block;
+/* basic.wxss */
+.answer{
+  font-size: 35rpx;
+  font-family: "微软雅黑";
+  padding:0 10rpx;
   line-height: 70rpx;
-  min-height: 150rpx;
-  margin-bottom: 30rpx;
-  color:#515567;
-  text-indent: 2em;
-}
 
-.content .ul{
-  overflow: hidden
 }
-.content .ul .li .left{
-  width:380rpx;
-  float:left;
-}
-.content .ul .li .right{
-  width:285rpx;
-  float:right;
-}
-.content .ul .li .right image{
-  width:265rpx;
-  height: 288rpx;
-}
-.calendar-btn{
-  position: fixed;
-  height: 50rpx;
-  left :30rpx;
-  bottom:175rpx;
-  z-index: 10;
-}
-.music{
- animation:musicRun 5s linear;
--moz-animation:musicRun 5s linear; /* Firefox */
--webkit-animation:musicRun 5s linear; /* Safari and Chrome */
--o-animation:musicRun 5s linear; /* Opera */
-animation-iteration-count:infinite;
-}
-.richtext{
-  margin:0;
-width:100%;
-line-height:50rpx;
-font-size:30rpx;
-} 
-.richtext image{ width:100% !important;}
-.richtext pre{ width:100% !important;}
-.richtext p{
-  text-indent: 2em;
-}
-
-
 .container,#pull-menu .menu,.footer-col .block .content,.node .blog-author,.node-header,.course-list li,.course-list li .tips,.page-friend .view-friend .item-list ul,.page-project .view-project .item-list ul,.view-members .views-row,.node .field-collection-container .field-collection-view,.view--kan .views-row {
     zoom:1;}
 
@@ -1046,7 +915,7 @@ html {
     box-sizing: border-box;
 }
 
-/* *:before,*:after {
+/* *,*:before,*:after {
     box-sizing: inherit;
 } */
 

@@ -24,7 +24,7 @@ Page({
     getDetail(option.id).then((res)=>{
       console.log(res);
       this.setData({
-        currentItem: res,
+        currentItem: res.data,
       });
     })
 

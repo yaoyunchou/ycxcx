@@ -1,10 +1,12 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/web/web",
     "pages/contact/contact",
     "pages/nodejs/nodejs",
     "pages/index/detail/index",
+    "pages/test/test",
     "pages/get-system-info/get-system-info"
     
   ],
