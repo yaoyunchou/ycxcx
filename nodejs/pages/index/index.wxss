@@ -17,7 +17,10 @@
   font-family: "微软雅黑";
   background: #fff;
 }
-
+.end-line{
+  text-align: center;
+  background:#fff;
+}
 .index-list .list-in .list-in-left{
   width:200rpx;
   height: 200rpx;

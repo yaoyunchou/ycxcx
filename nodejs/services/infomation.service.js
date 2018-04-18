@@ -4,8 +4,8 @@ const consts = require('../common/const');
 
 
 
-function getInfomation() {
-  return http.get('infomation/list',{});
+function getInfomation(options) {
+  return http.get('infomation/list', options);
 }
 function getDetail(id) {
   return http.get('infomation/detail/'+id);

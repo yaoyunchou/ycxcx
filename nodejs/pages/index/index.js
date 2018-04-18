@@ -12,7 +12,11 @@ Page({
     indicatorDots: false,
     autoplay: false,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+    pageSize:10,
+    pageNumber:1,
+    total:10,
+    isBottom:false
   },
   onShareAppMessage: function (res) {
     return {
@@ -36,21 +40,38 @@ Page({
       autoplay: !this.data.autoplay
     })
   },
-  intervalChange: function (e) {
-    this.setData({
-      interval: e.detail.value
-    })
-  },
   durationChange: function (e) {
     this.setData({
       duration: e.detail.value
     })
   },
+  lower:function(){
+  
+    var pageNumber = this.data.pageNumber + 1 ;
+    if (this.data.pageNumber*this.data.pageSize<this.data.total){
+      getList({ pageNumber: pageNumber, pageSize: this.data.pageSize }).then((res) => {
+        console.log(res);
+        this.setData({
+          dataList: this.data.dataList.concat(res.data), pageNumber: pageNumber, total: res.total
+        })
+      });
+    }else{
+      this.setData({
+       isBottom:true
+      })
+    }
+  },
   onShow: function (options) {
+    this.setData({
+      pageSize: 10,
+      pageNumber: 1,
+      total: 10,
+      isBottom: false});
     getList().then((res)=>{
       console.log(res);
       this.setData({
-        dataList: res
+        dataList:res.data,
+        total: res.total
       })
     });
   },

@@ -28,7 +28,7 @@ function http(options) {
       }
       if (utils.isUndefined(res.isSuccess) || res.isSuccess) {
         var data = options.responseRaw ? res : res.data;
-        resolve(data);
+        resolve(res);
       } else {
         reject(res);
       }
